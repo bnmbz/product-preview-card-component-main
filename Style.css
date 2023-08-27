@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body{
+    background: hsl(30, 38%, 92%);
+}
+p{
+    color: hsl(228, 12%, 48%);
+    font-size: 0.87rem;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+
+.amount>h2,
+.big-title{
+    font-weight: 700;
+    font-family: Frances;
+    font-size: 2.81rem;
+}
+
+.big-img{
+    width: 25rem;
+    border-radius: 10px 10px 0 0;
+}
+/* End of Typography */
+
+/* Hide Desktop Image */
+.desktop-image{
+    display: none;
+}
+
+/* Main Content Design */
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 25rem;
+    margin: 20px auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.content-container{
+    margin: 1.25em;
+}
+
+.title{
+    text-transform: uppercase;
+    margin: 0 0 0.62em 0;
+    letter-spacing: 0.5rem;
+}
+
+.big-title{
+    margin-bottom: 10px;
+}
+
+.content{
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+}
+
+.amount{
+    display: flex;
+    margin: 10px auto;
+}
+
+.amount h2{
+    color: hsl(158, 36%, 37%);
+}
+
+.amount p{
+    text-decoration: line-through;
+    margin: auto 20px;
+}
+
+.button{
+    width: 100%;
+    padding: 15px;
+    background-color: hsl(158, 36%, 37%);
+    color: whitesmoke;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.button::before{
+    content: url(./images/icon-cart.svg);
+    margin: auto 10px;
+    vertical-align: sub;
+}
+
+/* Active Button */
+.button:hover{
+    cursor: pointer;
+    background-color: hsl(212, 21%, 14%);
+}
+ /* End Main Content Design */
+
+/* Mobile Design */
+@media screen and (max-width: 375px) {
+    .container{
+        margin: 20px auto;
+        padding: auto;
+    }
+}
+
+/* Descktop Design */
+@media screen and (min-width: 1440px) {
+    .desktop-image{
+        display: flex;
+        width: 25rem;
+        float: left;
+        border-radius: 10px 0 0 10px;
+    }
+
+    /* Hide Desktop Image */
+    .mobile-image{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+    }
+    
+    .content-container{
+        background-color: hsl(0, 0%, 100%);
+        margin: 0;
+        padding: 40px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .title{
+        margin-bottom: 30px;
+    }
+
+    .big-title{
+        margin-bottom: 30px;
+    }
+
+    .content{
+        margin-bottom: 30px;
+    }
+
+    .amount{
+        margin-bottom: 10px;
+    }
+
+    .button{
+        margin: 0;
+    }
+}
